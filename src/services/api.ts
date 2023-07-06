@@ -7,7 +7,7 @@ export function setupAPIClient(ctx = undefined){
     let cookies = parseCookies(ctx);
 
     const api = axios.create({
-        baseURL: "https://api-barber.onrender.com",
+        baseURL: "https://barber-pro-cyan.vercel.app",
         headers:{
             Authorization: `Bearer ${cookies['@barber.token']}`
         }
